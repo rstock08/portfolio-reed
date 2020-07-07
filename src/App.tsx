@@ -1,12 +1,29 @@
 import React from 'react';
 import { Navbar } from './components/Navbar';
+import { ThemeProvider, createMuiTheme } from '@material-ui/core';
+import { Jumbotron } from './components/Jumbotron';
+import { AboutMe } from './components/AboutMe';
 
 
 function App() {
+
+  const theme = createMuiTheme({
+    palette: {
+      primary: {
+        main: "#ffecb3",
+      },
+      secondary: {
+        main: "#b71c1c",
+      },
+    },
+  });
+
   return (
-    <div>
+    <ThemeProvider theme={theme}>
       <Navbar />
-    </div>
+      <Jumbotron />
+      <AboutMe />
+    </ThemeProvider>
   );
 }
 
