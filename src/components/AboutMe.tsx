@@ -1,4 +1,5 @@
 import React from 'react';
+import Typography from '@material-ui/core/Typography';
 
 interface IProps {
 
@@ -7,7 +8,9 @@ interface IProps {
 export function AboutMe(props: IProps | undefined) {
     return (
         <div>
-            Hello 2
+            <Typography>
+                asdasdsad
+            </Typography>
         </div>
     )
 }

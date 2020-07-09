@@ -1,30 +1,17 @@
 import React from 'react';
 import { Navbar } from './components/Navbar';
-import { ThemeProvider, createMuiTheme } from '@material-ui/core';
+import { ThemeProvider, Grid, CssBaseline, makeStyles } from '@material-ui/core';
 import { Jumbotron } from './components/Jumbotron';
 import { AboutMe } from './components/AboutMe';
-
+import theme from './theme';
+import { AppContainer } from './components/AppContainer';
 
 function App() {
-
-  const theme = createMuiTheme({
-    palette: {
-      primary: {
-        main: "#ffecb3",
-      },
-      secondary: {
-        main: "#b71c1c",
-      },
-    },
-  });
-
   return (
     <ThemeProvider theme={theme}>
-      <Navbar />
-      <Jumbotron />
-      <AboutMe />
+      <CssBaseline />
+      <AppContainer />
     </ThemeProvider>
   );
 }
-
 export default App;
