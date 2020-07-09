@@ -11,18 +11,17 @@ export function AppContainer() {
     return (
         <div>
 
-            <Grid container spacing={3}>
-                <Grid item xs={12} style={{ paddingTop: "1.5rem", paddingRight: "1.5rem", float: "right" }}>
+            <Grid container>
+                <Grid item xs={12}>
+                    <Navbar />
+                </Grid>
+                <Grid item xs={12}>
                     <ActionButtonsComponent />
-
                 </Grid>
-                <Grid item xs={12} style={{ paddingTop: "5rem", float: "right" }}>
-                    <StepperComponent />
-                </Grid>
-                <Grid style={{ paddingTop: "5rem" }}>
+                <Grid item xs={12}>
                     <Jumbotron />
                 </Grid>
-                <Grid container>
+                <Grid item xs={12}>
                     <AboutMe />
                 </Grid>
             </Grid>
