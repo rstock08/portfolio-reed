@@ -10,7 +10,6 @@ export function AppContainer() {
 
     return (
         <div>
-
             <Grid container>
                 <Grid item xs={12}>
                     <Navbar />
@@ -20,9 +19,6 @@ export function AppContainer() {
                 </Grid>
                 <Grid item xs={12}>
                     <Jumbotron />
-                </Grid>
-                <Grid item xs={12}>
-                    <AboutMe />
                 </Grid>
             </Grid>
         </div>
