@@ -1,27 +1,29 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
+import { IPage } from './AppContainer';
 
-const useStyles = makeStyles({
-    root: {
-        flexGrow: 1,
-    },
-});
 
-export function Navbar() {
-    const classes = useStyles();
-    const [value, setValue] = React.useState(0);
+interface INavbarProps {
+    page: IPage[];
+    setPage: any;
+}
+
+export function Navbar(props: INavbarProps) {
 
     const handleChange = (event: React.ChangeEvent<{}>, newValue: number) => {
-        setValue(newValue);
+        let newPages: IPage[] = [...props.page];
+        let currPageIndex = newPages.findIndex((page: IPage) => page.isActive === true);
+        newPages[currPageIndex].isActive = false;
+        newPages[newValue].isActive = true;
+        props.setPage([...newPages]);
     };
 
     return (
-        <Paper className={classes.root}>
+        <Paper>
             <Tabs
-                value={value}
+                value={props.page.findIndex((page: IPage) => page.isActive === true)}
                 onChange={handleChange}
                 indicatorColor="secondary"
                 textColor="secondary"
