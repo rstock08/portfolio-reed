@@ -1,7 +1,6 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
-import { Grid, Paper, Tabs, Tab } from '@material-ui/core';
-import { Progress } from 'semantic-ui-react';
+import { Grid, Tabs, Tab } from '@material-ui/core';
 import { ISkill, ICategory } from './AppContainer';
 import { SkillBars } from './SkillBars';
 

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Typography from '@material-ui/core/Typography';
 import { Grid } from "@material-ui/core";
 
@@ -17,11 +17,11 @@ export function Jumbotron(props: IProps | undefined) {
         "An innovator."
     ];
 
-    useEffect(() => {
-        const timeout = setTimeout(() => {
-            titleIndex < 4 ? (setTitleIndex(titleIndex => titleIndex + 1)) : (setTitleIndex(titleIndex => 0));
-        }, 2000);
-    }, [titleIndex]);
+    // useEffect(() => {
+    //     const timeout = setTimeout(() => {
+    //         titleIndex < 4 ? (setTitleIndex(titleIndex => titleIndex + 1)) : (setTitleIndex(titleIndex => 0));
+    //     }, 2000);
+    // }, [titleIndex]);
 
     return (
         <div style={{ paddingTop: "10rem" }}>

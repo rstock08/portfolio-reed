@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Jumbotron } from "./Jumbotron";
 import { AboutMe } from "./AboutMe";
-import StepperComponent from "./StepperComponent";
 import { ActionButtonsComponent } from "./ActionButtonsComponent";
 import { Navbar } from "./Navbar";
 import { Grid } from "@material-ui/core";
@@ -32,7 +31,7 @@ export function AppContainer() {
         {
             pageName: "home",
             pageNumber: 0,
-            isActive: false,
+            isActive: true,
         },
         {
             pageName: "aboutme",
@@ -42,7 +41,7 @@ export function AppContainer() {
         {
             pageName: "skills",
             pageNumber: 2,
-            isActive: true,
+            isActive: false,
         },
         {
             pageName: "contactme",
