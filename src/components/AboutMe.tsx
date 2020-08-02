@@ -11,15 +11,17 @@ interface IProps {
 export function AboutMe(props: IProps | undefined) {
     return (
         <Grid container style={{ paddingTop: "8rem" }}>
-            <Grid item xs={1} />
 
-            <Grid item xs={3}>
-                <Image src={ProfileImage} size='large' circular />
+
+            <Grid item xl={1} lg={1} md={4} sm={3} xs={2} />
+            <Grid item xl={4} lg={3} md={4} sm={6} xs={8} >
+                <Image src={ProfileImage} circular />
             </Grid>
+            <Grid item xl={1} lg={1} md={4} sm={3} xs={2} />
 
-            <Grid item xs={1} />
 
-            <Grid item xs={5} style={{}}>
+            <Grid item xl={1} lg={"auto"} md={3} sm={2} />
+            <Grid item xl={4} lg={5} md={6} sm={8}>
                 <Typography variant="h3" align="center" color="textSecondary">
                     <b>About Me</b>
                 </Typography>
@@ -31,8 +33,7 @@ export function AboutMe(props: IProps | undefined) {
                     non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </Typography>
             </Grid>
-
-            <Grid item xs={1} />
+            <Grid item xl={1} lg={1} md={3} sm={2} />
         </Grid>
     )
 }

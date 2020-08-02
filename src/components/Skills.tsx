@@ -1,8 +1,9 @@
 import React from 'react';
-import Typography from '@material-ui/core/Typography';
 import { Grid, Tabs, Tab } from '@material-ui/core';
 import { ISkill, ICategory } from './AppContainer';
 import { SkillBars } from './SkillBars';
+import { ProjectCarousel } from './ProjectCarousel';
+import { TechnologyLogos } from './TechnologyLogos';
 
 interface IProps {
     skills: ISkill[];
@@ -32,9 +33,8 @@ export function Skills(props: IProps) {
             <Grid item xs={1} />
 
             <Grid item xs={4}>
-                <Typography>
-                    Skills
-                </Typography>
+                {/* <ProjectCarousel /> */}
+                <TechnologyLogos />
             </Grid>
 
             <Grid item xs={1} />

@@ -26,6 +26,9 @@ export function SkillBars(props: IProps) {
                         </Grid>
                     );
                 }
+                else {
+                    return null;
+                }
             })}
         </div>
     )

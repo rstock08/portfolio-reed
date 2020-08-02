@@ -6,6 +6,7 @@ import { Navbar } from "./Navbar";
 import { Grid } from "@material-ui/core";
 import { Skills } from "./Skills";
 import { ContactMe } from "./ContactMe";
+import { ResumeModal } from "./ResumeModal";
 
 export interface IPage {
     pageName: string,
@@ -68,6 +69,7 @@ export function AppContainer() {
         },
     ]);
 
+    // eslint-disable-next-line
     const [skills, setSkills] = useState([
         // Frontend
         {
@@ -214,16 +216,19 @@ export function AppContainer() {
             progress: 95,
             category: "tools"
         },
-    ])
+    ]);
+
+    const [openResumeModal, setOpenResumeModal] = useState(false);
 
     return (
         <div>
+            <ResumeModal open={openResumeModal} setOpen={setOpenResumeModal} />
             <Grid container>
                 <Grid item xs={12}>
                     <Navbar page={page} setPage={setPage} />
                 </Grid>
                 <Grid item xs={12}>
-                    <ActionButtonsComponent />
+                    <ActionButtonsComponent setOpenResumeModal={setOpenResumeModal} openResumeModal={openResumeModal} />
                 </Grid>
                 {page[0].isActive ? (
                     <Grid item xs={12}>
