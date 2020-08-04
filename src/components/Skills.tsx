@@ -2,8 +2,9 @@ import React from 'react';
 import { Grid, Tabs, Tab } from '@material-ui/core';
 import { ISkill, ICategory } from './AppContainer';
 import { SkillBars } from './SkillBars';
-import { ProjectCarousel } from './ProjectCarousel';
 import { TechnologyLogos } from './TechnologyLogos';
+import { ProjectCarousel } from './ProjectCarousel';
+import { ModalDiagram } from './ModalDiagram';
 
 interface IProps {
     skills: ISkill[];
@@ -33,8 +34,9 @@ export function Skills(props: IProps) {
             <Grid item xs={1} />
 
             <Grid item xs={4}>
+                <ModalDiagram />
                 {/* <ProjectCarousel /> */}
-                <TechnologyLogos />
+                {/* <TechnologyLogos /> */}
             </Grid>
 
             <Grid item xs={1} />
