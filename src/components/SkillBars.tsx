@@ -16,9 +16,14 @@ export function SkillBars(props: IProps) {
                 let activeCategory: ICategory | undefined = props.skillCategory.find((category: ICategory) => category.isActive === true);
                 if (activeCategory && skill.category === activeCategory.category) {
                     return (
-                        <Grid container>
+                        <Grid
+                            container
+                            direction="row"
+                            justify="center"
+                            alignItems="flex-start"
+                        >
                             <Grid item xs={3}>
-                                <Typography align="center"><b>{skill.name}</b></Typography>
+                                <Typography noWrap><b>{skill.name}</b></Typography>
                             </Grid>
                             <Grid item xs={9}>
                                 <Progress percent={skill.progress} warning />

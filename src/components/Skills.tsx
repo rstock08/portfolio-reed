@@ -48,11 +48,13 @@ export function Skills(props: IProps) {
             </Grid>
             <Grid item xl={1} lg={1} md={3} sm={2} />
 
-            <Grid item xl={2} lg={1} md={2} sm={1} />
-            <Grid item xl={8} lg={6} md={8} sm={10} xs={12} style={{ paddingTop: "2rem" }} >
+            <Grid item xl={2} lg={1} md={2} sm={1} xs={1} />
+            <Grid item xl={8} lg={6} md={8} sm={10} xs={10} style={{ paddingTop: "2rem" }} >
 
                 {/* <Paper elevation={3} style={{ paddingTop: "2rem", paddingBottom: "1rem", paddingRight: "2rem", paddingLeft: "2rem" }}> */}
                 <Tabs
+                    variant="scrollable"
+                    scrollButtons="on"
                     value={props.skillCategory.findIndex((category: ICategory) => category.isActive === true)}
                     onChange={(e) => handleChange(e)}
                     indicatorColor="secondary"
@@ -60,13 +62,13 @@ export function Skills(props: IProps) {
                     centered
                 >
                     {props.skillCategory.map((category: ICategory) => {
-                        return (<Tab label={category.displayName} />)
+                        return (<Tab wrapped label={category.displayName} />)
                     })}
                 </Tabs>
                 <SkillBars skills={props.skills} skillCategory={props.skillCategory} />
                 {/* </Paper> */}
             </Grid>
-            <Grid item xl={2} lg={1} md={2} sm={1} />
+            <Grid item xl={2} lg={1} md={2} sm={1} xs={1} />
         </Grid >
     )
 }
