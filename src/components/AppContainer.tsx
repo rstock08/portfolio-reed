@@ -232,7 +232,7 @@ export function AppContainer() {
                     </Grid>
                 ) : (null)}
 
-                {page[1].isActive ? (<AboutMe />) : (null)}
+                {page[1].isActive ? (<AboutMe page={page} setPage={setPage} />) : (null)}
 
                 {page[2].isActive ? (<Skills
                     skills={skills}

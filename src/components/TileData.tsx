@@ -15,12 +15,7 @@ export interface ITile {
 }
 
 export const tileData: ITile[] = [
-    {
-        img: CompTIA,
-        title: "CompTIA Security+",
-        author: "CompTIA",
-        cols: 1
-    },
+
     {
         img: Java,
         title: "Java",
@@ -61,6 +56,12 @@ export const tileData: ITile[] = [
         img: AWS,
         title: "Amazon Web Services",
         author: "Amazon",
+        cols: 1
+    },
+    {
+        img: CompTIA,
+        title: "CompTIA Security+",
+        author: "CompTIA",
         cols: 1
     },
 ]

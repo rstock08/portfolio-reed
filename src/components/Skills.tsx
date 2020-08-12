@@ -41,15 +41,14 @@ export function Skills(props: IProps) {
         >
             <TitleWithDivider title={"Skills"} />
 
-            <Grid item xs={1} />
+            <Grid item xs={2} />
             <Grid item xs={1} style={{ paddingRight: "1rem" }}>
                 <TechSideImages popupDirection={popupDirection.leftCenter} tileData={tileData1} />
             </Grid>
             <Grid item xs={1} style={{ paddingLeft: "1rem" }}>
                 <TechSideImages popupDirection={popupDirection.rightCenter} tileData={tileData2} />
             </Grid>
-            <Grid item xs={1} />
-            <Grid item xs={6}>
+            <Grid item xs={6} style={{ paddingLeft: "10rem" }}>
 
                 {/* <Paper elevation={3} style={{ paddingTop: "2rem", paddingBottom: "1rem", paddingRight: "2rem", paddingLeft: "2rem" }}> */}
                 <Tabs
