@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Typography, Divider, Paper } from '@material-ui/core';
+import { Grid, Paper } from '@material-ui/core';
 import { Form, Input, TextArea, Button } from 'semantic-ui-react';
 import { TitleWithDivider } from './TitleWithDivider';
 
