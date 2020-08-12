@@ -22,10 +22,10 @@ export function SkillBars(props: IProps) {
                             justify="center"
                             alignItems="flex-start"
                         >
-                            <Grid item xs={3}>
+                            <Grid item md={3} sm={4} xs={5}>
                                 <Typography noWrap><b>{skill.name}</b></Typography>
                             </Grid>
-                            <Grid item xs={9}>
+                            <Grid item md={9} sm={8} xs={7}>
                                 <Progress percent={skill.progress} warning />
                             </Grid>
                         </Grid>
