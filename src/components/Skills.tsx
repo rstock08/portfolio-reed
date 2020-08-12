@@ -58,6 +58,7 @@ export function Skills(props: IProps) {
                     indicatorColor="secondary"
                     textColor="secondary"
                     centered
+                    scrollButtons="on"
                     variant="scrollable"
                 >
                     {props.skillCategory.map((category: ICategory) => {
