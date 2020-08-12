@@ -3,7 +3,7 @@ import { Grid, Tabs, Tab } from '@material-ui/core';
 import { ISkill, ICategory } from './AppContainer';
 import { SkillBars } from './SkillBars';
 import { TitleWithDivider } from './TitleWithDivider';
-import { TechSideImages, popupDirection } from './TechSideImages';
+import { TechSideImagesRow } from './TechSideImagesRow';
 import { tileData } from "./TileData";
 
 interface IProps {
@@ -37,18 +37,18 @@ export function Skills(props: IProps) {
             container
             direction="row"
             justify="center"
-            alignItems="flex-start"
+            alignItems="center"
         >
             <TitleWithDivider title={"Skills"} />
 
-            <Grid item xs={2} />
-            <Grid item xs={1} style={{ paddingRight: "1rem" }}>
-                <TechSideImages popupDirection={popupDirection.leftCenter} tileData={tileData1} />
+            <Grid item xl={1} lg={1} md={3} sm={2} xs={1} />
+            <Grid item xl={2} lg={2} md={6} sm={8} xs={10} >
+                <TechSideImagesRow tileData1={tileData1} tileData2={tileData2} />
             </Grid>
-            <Grid item xs={1} style={{ paddingLeft: "1rem" }}>
-                <TechSideImages popupDirection={popupDirection.rightCenter} tileData={tileData2} />
-            </Grid>
-            <Grid item xs={6} style={{ paddingLeft: "10rem" }}>
+            <Grid item xl={1} lg={1} md={3} sm={2} xs={1} />
+
+            <Grid item xl={2} lg={1} md={2} sm={1} xs={1} />
+            <Grid item xl={8} lg={6} md={8} sm={10} xs={10} style={{ paddingTop: "2rem" }} >
 
                 {/* <Paper elevation={3} style={{ paddingTop: "2rem", paddingBottom: "1rem", paddingRight: "2rem", paddingLeft: "2rem" }}> */}
                 <Tabs
@@ -65,7 +65,7 @@ export function Skills(props: IProps) {
                 <SkillBars skills={props.skills} skillCategory={props.skillCategory} />
                 {/* </Paper> */}
             </Grid>
-            <Grid item xs={2} />
+            <Grid item xl={2} lg={1} md={2} sm={1} xs={1} />
         </Grid >
     )
 }
