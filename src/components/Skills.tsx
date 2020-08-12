@@ -61,9 +61,12 @@ export function Skills(props: IProps) {
                     scrollButtons="on"
                     variant="scrollable"
                 >
-                    {props.skillCategory.map((category: ICategory) => {
+                    <Tab label="FRONTEND LANGUAGES" />
+                    <Tab label="BACKEND LANGUAGES" />
+                    <Tab label="TOOLS/SOFTWARE" />
+                    {/* {props.skillCategory.map((category: ICategory) => {
                         return (<Tab wrapped label={category.displayName} />)
-                    })}
+                    })} */}
                 </Tabs>
                 <SkillBars skills={props.skills} skillCategory={props.skillCategory} />
                 {/* </Paper> */}
