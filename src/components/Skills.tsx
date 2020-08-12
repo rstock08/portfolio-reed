@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Tabs, Tab } from '@material-ui/core';
+import { Grid, Tabs, Tab, Paper } from '@material-ui/core';
 import { ISkill, ICategory } from './AppContainer';
 import { SkillBars } from './SkillBars';
 import { TitleWithDivider } from './TitleWithDivider';
@@ -51,25 +51,25 @@ export function Skills(props: IProps) {
             <Grid item xl={2} lg={1} md={2} sm={1} xs={1} />
             <Grid item xl={8} lg={6} md={8} sm={10} xs={10} style={{ paddingTop: "2rem" }} >
 
-                {/* <Paper elevation={3} style={{ paddingTop: "2rem", paddingBottom: "1rem", paddingRight: "2rem", paddingLeft: "2rem" }}> */}
-                <Tabs
-                    value={props.skillCategory.findIndex((category: ICategory) => category.isActive === true)}
-                    onChange={handleChange}
-                    indicatorColor="secondary"
-                    textColor="secondary"
-                    centered
-                    scrollButtons="on"
-                    variant="scrollable"
-                >
-                    <Tab label="FRONTEND LANGUAGES" />
-                    <Tab label="BACKEND LANGUAGES" />
-                    <Tab label="TOOLS/SOFTWARE" />
-                    {/* {props.skillCategory.map((category: ICategory) => {
+                <Paper elevation={3} style={{ paddingTop: "2rem", paddingBottom: "1rem", paddingRight: "2rem", paddingLeft: "2rem" }}>
+                    <Tabs
+                        value={props.skillCategory.findIndex((category: ICategory) => category.isActive === true)}
+                        onChange={handleChange}
+                        indicatorColor="secondary"
+                        textColor="secondary"
+                        centered
+                        scrollButtons="on"
+                        variant="scrollable"
+                    >
+                        <Tab label="FRONTEND LANGUAGES" />
+                        <Tab label="BACKEND LANGUAGES" />
+                        <Tab label="TOOLS/SOFTWARE" />
+                        {/* {props.skillCategory.map((category: ICategory) => {
                         return (<Tab wrapped label={category.displayName} />)
                     })} */}
-                </Tabs>
-                <SkillBars skills={props.skills} skillCategory={props.skillCategory} />
-                {/* </Paper> */}
+                    </Tabs>
+                    <SkillBars skills={props.skills} skillCategory={props.skillCategory} />
+                </Paper>
             </Grid>
             <Grid item xl={2} lg={1} md={2} sm={1} xs={1} />
         </Grid >
