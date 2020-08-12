@@ -11,8 +11,6 @@ interface IProps {
 export function AboutMe(props: IProps | undefined) {
     return (
         <Grid container style={{ paddingTop: "8rem" }}>
-
-
             <Grid item xl={1} lg={1} md={4} sm={3} xs={2} />
             <Grid item xl={4} lg={3} md={4} sm={6} xs={8} >
                 <Image src={ProfileImage} circular />

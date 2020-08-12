@@ -2,9 +2,9 @@ import React from 'react';
 import { Grid, Tabs, Tab } from '@material-ui/core';
 import { ISkill, ICategory } from './AppContainer';
 import { SkillBars } from './SkillBars';
-import { TechnologyLogos } from './TechnologyLogos';
-import { ProjectCarousel } from './ProjectCarousel';
-import { ModalDiagram } from './ModalDiagram';
+import { TitleWithDivider } from './TitleWithDivider';
+import { TechSideImages, popupDirection } from './TechSideImages';
+import { tileData } from "./TileData";
 
 interface IProps {
     skills: ISkill[];
@@ -29,25 +29,34 @@ export function Skills(props: IProps) {
         }
     }
 
+    const tileData1 = tileData.slice(0, 4);
+    const tileData2 = tileData.slice(4, 8);
+
     return (
-        <Grid container style={{ paddingTop: "2rem" }}>
-            <Grid item xs={1} />
+        <Grid
+            container
+            direction="row"
+            justify="center"
+            alignItems="flex-start"
+        >
+            <TitleWithDivider title={"Skills"} />
 
-            <Grid item xs={4}>
-                <ModalDiagram />
-                {/* <ProjectCarousel /> */}
-                {/* <TechnologyLogos /> */}
+            <Grid item xs={1} />
+            <Grid item xs={1} style={{ paddingRight: "1rem" }}>
+                <TechSideImages popupDirection={popupDirection.leftCenter} tileData={tileData1} />
             </Grid>
-
+            <Grid item xs={1} style={{ paddingLeft: "1rem" }}>
+                <TechSideImages popupDirection={popupDirection.rightCenter} tileData={tileData2} />
+            </Grid>
             <Grid item xs={1} />
+            <Grid item xs={6}>
 
-            <Grid item xs={5}>
                 {/* <Paper elevation={3} style={{ paddingTop: "2rem", paddingBottom: "1rem", paddingRight: "2rem", paddingLeft: "2rem" }}> */}
                 <Tabs
                     value={props.skillCategory.findIndex((category: ICategory) => category.isActive === true)}
                     onChange={(e) => handleChange(e)}
-                    indicatorColor="primary"
-                    textColor="primary"
+                    indicatorColor="secondary"
+                    textColor="secondary"
                     centered
                 >
                     {props.skillCategory.map((category: ICategory) => {
@@ -57,8 +66,7 @@ export function Skills(props: IProps) {
                 <SkillBars skills={props.skills} skillCategory={props.skillCategory} />
                 {/* </Paper> */}
             </Grid>
-
-            <Grid item xs={1} />
+            <Grid item xs={2} />
         </Grid >
     )
 }

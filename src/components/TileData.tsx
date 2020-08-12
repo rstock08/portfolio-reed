@@ -1,11 +1,11 @@
 import Java from "../resources/logos/java-icon.png";
 import CSharp from "../resources/logos/csharp-icon.png";
-import HuntingtonIngalls from "../resources/logos/huntington-ingalls-icon.png";
 import JavaScript from "../resources/logos/javascript-icon.png";
 import React from "../resources/logos/react-icon.png";
 import TypeScript from "../resources/logos/typescript-icon.png";
-import RockwellCollins from "../resources/logos/rockwell-collins-icon.jpg";
-import BoozAllenHamilton from "../resources/logos/booz-allen-hamilton-icon.png";
+import Agile from "../resources/logos/agile-logo.jpg";
+import AWS from "../resources/logos/aws-logo.png";
+import CompTIA from "../resources/logos/security-plus-logo.png";
 
 export interface ITile {
     img: string,
@@ -15,6 +15,12 @@ export interface ITile {
 }
 
 export const tileData: ITile[] = [
+    {
+        img: CompTIA,
+        title: "CompTIA Security+",
+        author: "CompTIA",
+        cols: 1
+    },
     {
         img: Java,
         title: "Java",
@@ -28,16 +34,10 @@ export const tileData: ITile[] = [
         cols: 1
     },
     {
-        img: HuntingtonIngalls,
-        title: "DoD Contractor",
-        author: "Huntington Ingalls",
-        cols: 3
-    },
-    {
-        img: BoozAllenHamilton,
-        title: "DoD Contractor",
-        author: "Booz Allen Hamilton",
-        cols: 3
+        img: React,
+        title: "React",
+        author: "FaceBook",
+        cols: 1
     },
     {
         img: JavaScript,
@@ -52,15 +52,15 @@ export const tileData: ITile[] = [
         cols: 1
     },
     {
-        img: RockwellCollins,
-        title: "DoD Contractor",
-        author: "Rockwell Collins",
-        cols: 2
+        img: Agile,
+        title: "Agile Development",
+        author: "Ken, Jeff, Martin",
+        cols: 1
     },
     {
-        img: React,
-        title: "React",
-        author: "FaceBook",
+        img: AWS,
+        title: "Amazon Web Services",
+        author: "Amazon",
         cols: 1
-    }
+    },
 ]

@@ -35,7 +35,7 @@ export function ModalDiagram(props: IProps) {
 
     return (
         <div className={classes.root}>
-            <GridList cellHeight={160} cols={3} className={classes.gridList}>
+            <GridList cellHeight={80} cols={1} className={classes.gridList}>
                 {tileData.map((tile: ITile) => (
                     <GridListTile key={tile.img} cols={tile.cols || 1}>
                         <img src={tile.img} alt={tile.title} />

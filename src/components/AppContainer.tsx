@@ -98,12 +98,12 @@ export function AppContainer() {
             category: "frontend"
         },
         {
-            name: "Jest",
+            name: "Jest && Enzyme",
             progress: 70,
             category: "frontend"
         },
         {
-            name: "Enzyme",
+            name: "Redux",
             progress: 70,
             category: "frontend"
         },
@@ -120,13 +120,18 @@ export function AppContainer() {
 
         // Backend
         {
-            name: "Java",
+            name: "Java (Spring Boot)",
             progress: 70,
             category: "backend"
         },
         {
-            name: "Spring Boot",
+            name: "Express && Feathers",
             progress: 70,
+            category: "backend"
+        },
+        {
+            name: "Node.js",
+            progress: 60,
             category: "backend"
         },
         {
@@ -135,23 +140,23 @@ export function AppContainer() {
             category: "backend"
         },
         {
-            name: "WPF",
-            progress: 80,
+            name: "Python",
+            progress: 60,
             category: "backend"
         },
         {
-            name: "Express.js",
-            progress: 70,
-            category: "backend"
-        },
-        {
-            name: "Feathers.js",
-            progress: 70,
-            category: "backend"
-        },
-        {
-            name: "SQL",
+            name: "Postgres",
             progress: 75,
+            category: "backend"
+        },
+        {
+            name: "MySQL",
+            progress: 70,
+            category: "backend"
+        },
+        {
+            name: "MSSQL",
+            progress: 65,
             category: "backend"
         },
 
@@ -172,13 +177,13 @@ export function AppContainer() {
             category: "tools"
         },
         {
-            name: "PGAdmin",
+            name: "PGAdmin && MyPHPAdmin",
             progress: 90,
             category: "tools"
         },
         {
             name: "IntelliJ",
-            progress: 85,
+            progress: 80,
             category: "tools"
         },
         {
@@ -187,18 +192,18 @@ export function AppContainer() {
             category: "tools"
         },
         {
-            name: "Jira/Confluence",
+            name: "Jira && Confluence",
             progress: 80,
             category: "tools"
         },
         {
-            name: "Source Tree",
+            name: "Source Tree && Git",
             progress: 90,
             category: "tools"
         },
         {
-            name: "GIT",
-            progress: 80,
+            name: "Yarn && Npm",
+            progress: 95,
             category: "tools"
         },
         {
@@ -206,16 +211,7 @@ export function AppContainer() {
             progress: 70,
             category: "tools"
         },
-        {
-            name: "Yarn",
-            progress: 95,
-            category: "tools"
-        },
-        {
-            name: "NPM",
-            progress: 95,
-            category: "tools"
-        },
+
     ]);
 
     const [openResumeModal, setOpenResumeModal] = useState(false);

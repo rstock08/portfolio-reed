@@ -17,10 +17,10 @@ export function SkillBars(props: IProps) {
                 if (activeCategory && skill.category === activeCategory.category) {
                     return (
                         <Grid container>
-                            <Grid item xs={2}>
-                                <Typography style={{ paddingTop: ".25rem", paddingRight: "1rem" }} align="center"><b>{skill.name}</b></Typography>
+                            <Grid item xs={3}>
+                                <Typography align="center"><b>{skill.name}</b></Typography>
                             </Grid>
-                            <Grid item xs={10}>
+                            <Grid item xs={9}>
                                 <Progress percent={skill.progress} warning />
                             </Grid>
                         </Grid>
