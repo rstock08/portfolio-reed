@@ -53,13 +53,12 @@ export function Skills(props: IProps) {
 
                 {/* <Paper elevation={3} style={{ paddingTop: "2rem", paddingBottom: "1rem", paddingRight: "2rem", paddingLeft: "2rem" }}> */}
                 <Tabs
-                    variant="scrollable"
-                    scrollButtons="on"
                     value={props.skillCategory.findIndex((category: ICategory) => category.isActive === true)}
-                    onChange={(e) => handleChange(e)}
+                    onChange={handleChange}
                     indicatorColor="secondary"
                     textColor="secondary"
                     centered
+                    variant="scrollable"
                 >
                     {props.skillCategory.map((category: ICategory) => {
                         return (<Tab wrapped label={category.displayName} />)
