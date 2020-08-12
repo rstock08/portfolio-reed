@@ -42,14 +42,14 @@ export function Skills(props: IProps) {
         >
             <TitleWithDivider title={"Skills"} />
 
-            <Grid item xl={1} lg={1} md={3} sm={2} xs={1} />
-            <Grid item xl={2} lg={2} md={6} sm={8} xs={10} >
+            <Grid item xl={1} lg={1} md={3} sm={2} />
+            <Grid item xl={2} lg={2} md={6} sm={8} xs={12} >
                 <TechSideImagesRow tileData1={tileData1} tileData2={tileData2} />
             </Grid>
-            <Grid item xl={1} lg={1} md={3} sm={2} xs={1} />
+            <Grid item xl={1} lg={1} md={3} sm={2} />
 
-            <Grid item xl={2} lg={1} md={2} sm={1} xs={1} />
-            <Grid item xl={8} lg={6} md={8} sm={10} xs={10} style={{ paddingTop: "2rem" }} >
+            <Grid item xl={2} lg={1} md={2} sm={1} />
+            <Grid item xl={8} lg={6} md={8} sm={10} xs={12} style={{ paddingTop: "2rem" }} >
 
                 {/* <Paper elevation={3} style={{ paddingTop: "2rem", paddingBottom: "1rem", paddingRight: "2rem", paddingLeft: "2rem" }}> */}
                 <Tabs
@@ -66,7 +66,7 @@ export function Skills(props: IProps) {
                 <SkillBars skills={props.skills} skillCategory={props.skillCategory} />
                 {/* </Paper> */}
             </Grid>
-            <Grid item xl={2} lg={1} md={2} sm={1} xs={1} />
+            <Grid item xl={2} lg={1} md={2} sm={1} />
         </Grid >
     )
 }
