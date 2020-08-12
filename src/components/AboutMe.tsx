@@ -20,7 +20,7 @@ export function AboutMe(props: IProps) {
     }
 
     return (
-        <Grid container style={{ paddingTop: "6rem" }}>
+        <Grid container style={{ paddingTop: "6rem", paddingBottom: "5rem" }}>
             <Grid item xl={1} lg={1} md={4} sm={3} xs={2} />
             <Grid item xl={4} lg={3} md={4} sm={6} xs={8} >
                 <Image src={ProfileImage} circular />

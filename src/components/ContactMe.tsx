@@ -9,20 +9,20 @@ interface IProps {
 
 export function ContactMe(props: IProps | undefined) {
     return (
-        <Grid container>
+        <Grid container style={{ paddingBottom: "5rem" }}>
             <TitleWithDivider title={"About Me"} />
             <Grid container justify="center">
                 <Grid item xl={4} lg={4} md={6} sm={8} xs={10}>
                     <Paper style={{ paddingTop: "4em", paddingBottom: "4em", paddingLeft: "4em", paddingRight: "4em" }}>
                         <Form action="https://formspree.io/mvowyqdw" method="POST">
                             <Form.Field
-                                type="text" 
+                                type="text"
                                 name="name"
                                 control={Input}
                                 placeholder="Name"
                             />
                             <Form.Field
-                                type="email" 
+                                type="email"
                                 name="_replyto"
                                 control={Input}
                                 placeholder="Email"

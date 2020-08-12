@@ -38,6 +38,7 @@ export function Skills(props: IProps) {
             direction="row"
             justify="center"
             alignItems="center"
+            style={{ paddingBottom: "5rem" }}
         >
             <TitleWithDivider title={"Skills"} />
 

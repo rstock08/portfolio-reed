@@ -24,7 +24,7 @@ export function Jumbotron(props: IProps | undefined) {
     }, [titleIndex]);
 
     return (
-        <div style={{ paddingTop: "10rem" }}>
+        <div style={{ paddingTop: "10rem", paddingBottom: "5rem" }}>
             <Grid container>
                 <Grid item xs={12}>
                     <Typography style={{ paddingBottom: ".5rem" }} align="center" variant="h2" component="h2" gutterBottom color="textSecondary">
