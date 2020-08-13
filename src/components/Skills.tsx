@@ -13,7 +13,8 @@ interface IProps {
 }
 
 export function Skills(props: IProps) {
-    const handleChange = (e: any) => {
+
+    const handleChange = (event: React.ChangeEvent<{}>, newValue: number) => {
         let tempSkillCategory = [...props.skillCategory];
         let indexNextActive = props.skillCategory.findIndex((category: ICategory) => category.displayName === e.currentTarget.innerText);
         let indexCurrentActive = props.skillCategory.findIndex((category: ICategory) => category.isActive === true);
@@ -50,20 +51,18 @@ export function Skills(props: IProps) {
 
             <Grid item xl={2} lg={1} md={2} sm={1} xs={1} />
             <Grid item xl={8} lg={6} md={8} sm={10} xs={10} style={{ paddingTop: "2rem" }} >
-                <Paper>
-                    <Tabs
-                        scrollButtons="on"
-                        value={props.skillCategory.findIndex((category: ICategory) => category.isActive === true)}
-                        onChange={handleChange}
-                        indicatorColor="secondary"
-                        textColor="secondary"
-                        centered
-                    >
-                        {props.skillCategory.map((category: ICategory) => {
-                            return (<Tab wrapped label={category.displayName} />)
-                        })}
-                    </Tabs>
-                </Paper>
+                <Tabs
+                    scrollButtons="on"
+                    value={props.skillCategory.findIndex((category: ICategory) => category.isActive === true)}
+                    onChange={handleChange}
+                    indicatorColor="secondary"
+                    textColor="secondary"
+                    centered
+                >
+                    {props.skillCategory.map((category: ICategory) => {
+                        return (<Tab wrapped label={category.displayName} />)
+                    })}
+                </Tabs>
                 <SkillBars skills={props.skills} skillCategory={props.skillCategory} />
             </Grid>
             <Grid item xl={2} lg={1} md={2} sm={1} xs={1} />
