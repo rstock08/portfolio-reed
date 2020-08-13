@@ -28,6 +28,7 @@ export function ContactMe(props: IProps | undefined) {
                                 placeholder="Email"
                             />
                             <Form.Field
+                                name="message"
                                 style={{ height: "10em" }}
                                 control={TextArea}
                                 placeholder="Message"
