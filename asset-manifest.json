@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/portfolio-v5/static/js/main.dcd4842b.chunk.js",
-    "main.js.map": "/portfolio-v5/static/js/main.dcd4842b.chunk.js.map",
+    "main.js": "/portfolio-v5/static/js/main.88cd4ed5.chunk.js",
+    "main.js.map": "/portfolio-v5/static/js/main.88cd4ed5.chunk.js.map",
     "runtime-main.js": "/portfolio-v5/static/js/runtime-main.15f39f8c.js",
     "runtime-main.js.map": "/portfolio-v5/static/js/runtime-main.15f39f8c.js.map",
-    "static/js/2.ac24af31.chunk.js": "/portfolio-v5/static/js/2.ac24af31.chunk.js",
-    "static/js/2.ac24af31.chunk.js.map": "/portfolio-v5/static/js/2.ac24af31.chunk.js.map",
+    "static/js/2.fc923313.chunk.js": "/portfolio-v5/static/js/2.fc923313.chunk.js",
+    "static/js/2.fc923313.chunk.js.map": "/portfolio-v5/static/js/2.fc923313.chunk.js.map",
     "index.html": "/portfolio-v5/index.html",
-    "precache-manifest.6e0233a8175b841cfa11a5b26c153d68.js": "/portfolio-v5/precache-manifest.6e0233a8175b841cfa11a5b26c153d68.js",
+    "precache-manifest.96ef72823aea1c0321194cc59d133c34.js": "/portfolio-v5/precache-manifest.96ef72823aea1c0321194cc59d133c34.js",
     "service-worker.js": "/portfolio-v5/service-worker.js",
-    "static/js/2.ac24af31.chunk.js.LICENSE.txt": "/portfolio-v5/static/js/2.ac24af31.chunk.js.LICENSE.txt",
+    "static/js/2.fc923313.chunk.js.LICENSE.txt": "/portfolio-v5/static/js/2.fc923313.chunk.js.LICENSE.txt",
     "static/media/Reed Stock - Resume.jpg": "/portfolio-v5/static/media/Reed Stock - Resume.674f4003.jpg",
     "static/media/agile-logo.jpg": "/portfolio-v5/static/media/agile-logo.a563f0a0.jpg",
     "static/media/aws-logo.png": "/portfolio-v5/static/media/aws-logo.21f8a479.png",
@@ -17,7 +17,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.15f39f8c.js",
-    "static/js/2.ac24af31.chunk.js",
-    "static/js/main.dcd4842b.chunk.js"
+    "static/js/2.fc923313.chunk.js",
+    "static/js/main.88cd4ed5.chunk.js"
   ]
 }
