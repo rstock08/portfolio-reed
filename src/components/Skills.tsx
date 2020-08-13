@@ -22,14 +22,6 @@ export function Skills(props: IProps) {
         props.setSkillCategory([...newSkillCategory]);
     }
 
-    // const handleChange = (event: React.ChangeEvent<{}>, newValue: number) => {
-    //     let newPages: IPage[] = [...props.page];
-    //     let currPageIndex = newPages.findIndex((page: IPage) => page.isActive === true);
-    //     newPages[currPageIndex].isActive = false;
-    //     newPages[newValue].isActive = true;
-    //     props.setPage([...newPages]);
-    // };
-
     const tileData1 = tileData.slice(0, 4);
     const tileData2 = tileData.slice(4, 8);
 
@@ -53,6 +45,7 @@ export function Skills(props: IProps) {
             <Grid item xl={8} lg={6} md={8} sm={10} xs={10} style={{ paddingTop: "2rem" }} >
                 <Tabs
                     scrollButtons="on"
+                    variant="scrollable"
                     value={props.skillCategory.findIndex((category: ICategory) => category.isActive === true)}
                     onChange={handleChange}
                     indicatorColor="secondary"
