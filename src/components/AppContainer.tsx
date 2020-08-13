@@ -64,7 +64,7 @@ export function AppContainer() {
         },
         {
             category: "tools",
-            displayName: "TOOLS/SOFTWARE",
+            displayName: "TOOLS / SOFTWARE",
             isActive: false,
         },
     ]);
@@ -142,6 +142,11 @@ export function AppContainer() {
         {
             name: "Python",
             progress: 60,
+            category: "backend"
+        },
+        {
+            name: "C / C++",
+            progress: 50,
             category: "backend"
         },
         {
