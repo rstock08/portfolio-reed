@@ -1,3 +1,5 @@
+## Application Description
+
 Created a new Portfolio website for hosting via github static pages. The page is meant as a way to demonstrate my ability to create React applications using TypeScript / Material UI / Semantic UI and several other libraries. It is also meant as a point of contact and an interactable resume of sorts!
 
 ## Available Scripts
