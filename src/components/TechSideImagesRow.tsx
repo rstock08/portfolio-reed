@@ -11,31 +11,21 @@ interface IProps {
 export function TechSideImagesRow(props: IProps) {
     return (
         <Grid
+            style={{ paddingTop: "0px", marginTop: "0px" }}
             container
             direction="row"
             justify="center"
-            alignItems="center">
+            alignContent="flex-start">
             {props.tileData1.map((tile: ITile) => (
                 <Grid item xl={6} lg={6} md={3} sm={4} xs={4} style={{ paddingRight: "1rem", paddingBottom: "1rem" }}>
-                    <Popup
-                        trigger={<Image size="small" src={tile.img} circular />}
-                        content={tile.title}
-                        size='large'
-                        position={tile.popupDirection}
-                    />
+                    <Image size="small" src={tile.img} circular />
                 </Grid>
 
             ))}
             {props.tileData2.map((tile: ITile) => (
                 <Grid item xl={6} lg={6} md={3} sm={4} xs={4}>
-                    <Popup
-                        trigger={<Image size="small" src={tile.img} circular />}
-                        content={tile.title}
-                        size='large'
-                        position={tile.popupDirection}
-                    />
+                    <Image size="small" src={tile.img} circular />
                 </Grid>
-
             ))}
         </Grid>
     )

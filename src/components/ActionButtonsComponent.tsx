@@ -21,42 +21,24 @@ export function ActionButtonsComponent(props: IProps) {
         <div>
             <div style={{ paddingRight: "1rem", paddingTop: "1rem" }}>
                 <Fab style={{ float: "right" }} size="small" color="secondary">
-                    <Popup
-                        trigger={
-                            <IconButton onClick={() => handleOnClick()} color="inherit">
-                                <DescriptionIcon />
-                            </IconButton>
-                        }
-                        content='You can look over my resume!'
-                        position='bottom right'
-                    />
+                    <IconButton onClick={() => handleOnClick()} color="inherit">
+                        <DescriptionIcon />
+                    </IconButton>
                 </Fab>
             </div>
             <div style={{ paddingRight: "4rem" }}>
 
                 <Fab style={{ float: "right" }} size="small" color="secondary">
-                    <Popup
-                        trigger={
-                            <IconButton onClick={() => window.open("https://github.com/rstock08")} color="inherit">
-                                <GitHubIcon />
-                            </IconButton>
-                        }
-                        content='Feel free to check out my Github.'
-                        position='bottom right'
-                    />
+                    <IconButton onClick={() => window.open("https://github.com/rstock08")} color="inherit">
+                        <GitHubIcon />
+                    </IconButton>
                 </Fab>
             </div>
             <div style={{ paddingRight: "7rem" }}>
                 <Fab style={{ float: "right" }} size="small" color="secondary" >
-                    <Popup
-                        trigger={
-                            <IconButton onClick={() => window.open("https://www.linkedin.com/in/reed-stock/")} color="inherit">
-                                <LinkedInIcon />
-                            </IconButton>
-                        }
-                        content='Connect with me on LinkedIn!'
-                        position='bottom right'
-                    />
+                    <IconButton onClick={() => window.open("https://www.linkedin.com/in/reed-stock/")} color="inherit">
+                        <LinkedInIcon />
+                    </IconButton>
                 </Fab>
             </div>
         </div>

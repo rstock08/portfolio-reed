@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Tabs, Tab, Paper } from '@material-ui/core';
+import { Grid, Tabs, Tab } from '@material-ui/core';
 import { ISkill, ICategory } from './AppContainer';
 import { SkillBars } from './SkillBars';
 import { TitleWithDivider } from './TitleWithDivider';
@@ -36,7 +36,10 @@ export function Skills(props: IProps) {
             <TitleWithDivider title={"Skills"} />
 
             <Grid item xl={1} lg={1} md={3} sm={2} />
-            <Grid item xl={2} lg={2} md={6} sm={8} xs={12} >
+            <Grid item xl={2} lg={2} md={6} sm={8} xs={12}
+                justify="center"
+                alignContent="flex-start"
+            >
                 <TechSideImagesRow tileData1={tileData1} tileData2={tileData2} />
             </Grid>
             <Grid item xl={1} lg={1} md={3} sm={2} />

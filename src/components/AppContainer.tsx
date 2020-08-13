@@ -187,13 +187,8 @@ export function AppContainer() {
             category: "tools"
         },
         {
-            name: "IntelliJ",
+            name: "IntelliJ && Visual Studio",
             progress: 80,
-            category: "tools"
-        },
-        {
-            name: "Visual Studio",
-            progress: 85,
             category: "tools"
         },
         {

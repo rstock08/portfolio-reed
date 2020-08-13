@@ -7,7 +7,7 @@ interface IProps {
 
 export function TitleWithDivider(props: IProps) {
     return (
-        <Grid container>
+        <Grid container style={{ paddingTop: "2rem" }}>
             <Grid item xs={12}>
                 <Typography variant="h3" align="center" color="textSecondary">
                     <b>
