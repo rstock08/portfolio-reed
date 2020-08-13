@@ -15,20 +15,20 @@ interface IProps {
 export function Skills(props: IProps) {
 
     const handleChange = (event: React.ChangeEvent<{}>, newValue: number) => {
-        let tempSkillCategory = [...props.skillCategory];
-        let indexNextActive = props.skillCategory.findIndex((category: ICategory) => category.displayName === e.currentTarget.innerText);
+        let newSkillCategory = [...props.skillCategory];
         let indexCurrentActive = props.skillCategory.findIndex((category: ICategory) => category.isActive === true);
-        if (indexNextActive === -1 || indexCurrentActive === -1) {
-            tempSkillCategory[0].isActive = true;
-            tempSkillCategory[1].isActive = false;
-            tempSkillCategory[2].isActive = false;
-        }
-        else {
-            tempSkillCategory[indexCurrentActive].isActive = false;
-            tempSkillCategory[indexNextActive].isActive = true;
-            props.setSkillCategory([...tempSkillCategory]);
-        }
+        newSkillCategory[indexCurrentActive].isActive = false;
+        newSkillCategory[newValue].isActive = true;
+        props.setSkillCategory([...newSkillCategory]);
     }
+
+    // const handleChange = (event: React.ChangeEvent<{}>, newValue: number) => {
+    //     let newPages: IPage[] = [...props.page];
+    //     let currPageIndex = newPages.findIndex((page: IPage) => page.isActive === true);
+    //     newPages[currPageIndex].isActive = false;
+    //     newPages[newValue].isActive = true;
+    //     props.setPage([...newPages]);
+    // };
 
     const tileData1 = tileData.slice(0, 4);
     const tileData2 = tileData.slice(4, 8);
