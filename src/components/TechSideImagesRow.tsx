@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, Popup } from 'semantic-ui-react'
+import { Image } from 'semantic-ui-react'
 import { ITile } from "./TileData";
 import { Grid } from '@material-ui/core';
 

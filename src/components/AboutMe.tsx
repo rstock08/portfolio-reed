@@ -22,14 +22,14 @@ export function AboutMe(props: IProps) {
     return (
         <Grid container style={{ paddingTop: "6rem", paddingBottom: "5rem" }}>
             <Grid item xl={1} lg={1} md={4} sm={3} xs={2} />
-            <Grid item xl={4} lg={3} md={4} sm={6} xs={8} >
+            <Grid item xl={3} lg={3} md={4} sm={6} xs={8} >
                 <Image src={ProfileImage} circular />
             </Grid>
             <Grid item xl={1} lg={1} md={4} sm={3} xs={2} />
 
 
-            <Grid item xl={1} lg={"auto"} md={3} sm={2} />
-            <Grid item xl={4} lg={5} md={6} sm={8}>
+            <Grid item xl={"auto"} lg={"auto"} md={3} sm={2} />
+            <Grid item xl={5} lg={5} md={6} sm={8}>
                 <Typography variant="h3" align="center" color="textSecondary">
                     <b>About Me</b>
                 </Typography>

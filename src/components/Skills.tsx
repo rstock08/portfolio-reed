@@ -44,8 +44,8 @@ export function Skills(props: IProps) {
             </Grid>
             <Grid item xl={1} lg={1} md={3} sm={2} />
 
-            <Grid item xl={2} lg={1} md={2} sm={1} xs={1} />
-            <Grid item xl={8} lg={6} md={8} sm={10} xs={10} style={{ paddingTop: "2rem" }} >
+            <Grid item xl={1} lg={1} md={2} sm={1} xs={1} />
+            <Grid item xl={6} lg={6} md={8} sm={10} xs={10} style={{ paddingTop: "2rem" }} >
                 <Tabs
                     scrollButtons="on"
                     variant="scrollable"
@@ -61,7 +61,7 @@ export function Skills(props: IProps) {
                 </Tabs>
                 <SkillBars skills={props.skills} skillCategory={props.skillCategory} />
             </Grid>
-            <Grid item xl={2} lg={1} md={2} sm={1} xs={1} />
+            <Grid item xl={1} lg={1} md={2} sm={1} xs={1} />
         </Grid >
     )
 }
