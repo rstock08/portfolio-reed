@@ -10,7 +10,7 @@ interface IProps {
 export function ContactMe(props: IProps | undefined) {
     return (
         <Grid container style={{ paddingBottom: "5rem" }}>
-            <TitleWithDivider title={"About Me"} />
+            <TitleWithDivider title={"Contact Me"} />
             <Grid container justify="center">
                 <Grid item xl={4} lg={4} md={6} sm={8} xs={10}>
                     <Paper style={{ paddingTop: "4em", paddingBottom: "4em", paddingLeft: "4em", paddingRight: "4em" }}>
