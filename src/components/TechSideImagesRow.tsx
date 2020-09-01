@@ -17,13 +17,13 @@ export function TechSideImagesRow(props: IProps) {
             justify="center"
             alignContent="flex-start">
             {props.tileData1.map((tile: ITile) => (
-                <Grid item xl={6} lg={6} md={3} sm={4} xs={4} style={{ paddingRight: "1rem", paddingBottom: "1rem" }}>
+                <Grid key={tile.title} item xl={6} lg={6} md={3} sm={4} xs={4} style={{ paddingRight: "1rem", paddingBottom: "1rem" }}>
                     <Image size="small" src={tile.img} circular />
                 </Grid>
 
             ))}
             {props.tileData2.map((tile: ITile) => (
-                <Grid item xl={6} lg={6} md={3} sm={4} xs={4}>
+                <Grid key={tile.title} item xl={6} lg={6} md={3} sm={4} xs={4}>
                     <Image size="small" src={tile.img} circular />
                 </Grid>
             ))}
