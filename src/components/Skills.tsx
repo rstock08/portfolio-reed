@@ -53,7 +53,7 @@ export function Skills(props: IProps) {
                     onChange={handleChange}
                     indicatorColor="secondary"
                     textColor="secondary"
-                    centered
+
                 >
                     {props.skillCategory.map((category: ICategory) => {
                         return (<Tab wrapped label={category.displayName} />)
