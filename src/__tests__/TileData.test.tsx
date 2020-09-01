@@ -1,4 +1,3 @@
-import React from "react";
 import { tileData, popupDirection } from "../components/TileData";
 import Java from "../resources/logos/java-icon.png";
 
