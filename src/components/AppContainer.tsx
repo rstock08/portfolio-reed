@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { Jumbotron } from "./Jumbotron";
 import { AboutMe } from "./AboutMe";
-import { ActionButtonsComponent } from "./ActionButtonsComponent";
+import { ActionButtons } from "./ActionButtons";
 import { Navbar } from "./Navbar";
 import { Grid } from "@material-ui/core";
 import { Skills } from "./Skills";
@@ -224,11 +223,11 @@ export function AppContainer() {
                     <Navbar page={page} setPage={setPage} />
                 </Grid>
                 <Grid item xs={12}>
-                    <ActionButtonsComponent setOpenResumeModal={setOpenResumeModal} openResumeModal={openResumeModal} />
+                    <ActionButtons setOpenResumeModal={setOpenResumeModal} openResumeModal={openResumeModal} />
                 </Grid>
                 {page[0].isActive ? (
                     <Grid item xs={12}>
-                        <Jumbotron />
+                        <JumboTron />
                     </Grid>
                 ) : (null)}
 

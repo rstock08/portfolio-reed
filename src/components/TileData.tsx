@@ -27,7 +27,6 @@ export enum popupDirection {
 }
 
 export const tileData: ITile[] = [
-
     {
         img: Java,
         title: "Java",

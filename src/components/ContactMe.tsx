@@ -3,11 +3,7 @@ import { Grid, Paper } from '@material-ui/core';
 import { Form, Input, TextArea, Button } from 'semantic-ui-react';
 import { TitleWithDivider } from './TitleWithDivider';
 
-interface IProps {
-
-}
-
-export function ContactMe(props: IProps | undefined) {
+export function ContactMe() {
     return (
         <Grid container style={{ paddingBottom: "5rem" }}>
             <TitleWithDivider title={"Contact Me"} />

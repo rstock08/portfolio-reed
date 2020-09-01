@@ -10,7 +10,7 @@ interface IProps {
     setOpenResumeModal(value: boolean): void;
 }
 
-export function ActionButtonsComponent(props: IProps) {
+export function ActionButtons(props: IProps) {
 
     const handleOnClick = () => {
         props.setOpenResumeModal(!props.openResumeModal)
