@@ -6,6 +6,7 @@ import { Grid } from "@material-ui/core";
 import { Skills } from "./Skills";
 import { ContactMe } from "./ContactMe";
 import { ResumeModal } from "./ResumeModal";
+import { Jumbotron } from './Jumbotron';
 
 export interface IPage {
     pageName: string,
@@ -216,7 +217,7 @@ export function AppContainer() {
     const [openResumeModal, setOpenResumeModal] = useState(false);
 
     return (
-        <div>
+        <>
             <ResumeModal open={openResumeModal} setOpen={setOpenResumeModal} />
             <Grid container>
                 <Grid item xs={12}>
@@ -227,7 +228,7 @@ export function AppContainer() {
                 </Grid>
                 {page[0].isActive ? (
                     <Grid item xs={12}>
-                        <JumboTron />
+                        <Jumbotron />
                     </Grid>
                 ) : (null)}
 
@@ -242,7 +243,7 @@ export function AppContainer() {
                 {page[3].isActive ? (<ContactMe />) : (null)}
 
             </Grid>
-        </div>
+        </>
 
     )
 }
